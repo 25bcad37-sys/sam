@@ -1,4 +1,4 @@
-name: Portfolio CI/CD Pipeline
+name: Deploy Flask App
 
 on:
   push:
@@ -10,19 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
         pip install -r requirements.txt
 
-    - name: Run App
+    - name: Run app test
       run: |
-        python app.py &
-        sleep 5
+        python -m py_compile app.py
+        
