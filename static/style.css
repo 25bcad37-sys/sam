@@ -51,16 +51,51 @@ section {
     border-radius: 20px;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact {
     background: #ffffff;
+    text-align: center;
 }
 
-input, textarea {
-    width: 100%;
+/* FORM BOX */
+.contact form {
     max-width: 400px;
-    padding: 10px;
-    margin: 10px 0;
+    margin: 0 auto;   /* center form */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* INPUT FIELDS */
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* TEXTAREA HEIGHT */
+.contact textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+.contact button {
+    padding: 12px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* BUTTON HOVER */
+.contact button:hover {
+    background: #1565c0;
 }
 
 button {
