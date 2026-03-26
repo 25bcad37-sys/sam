@@ -6,31 +6,42 @@
 </head>
 <body>
 
+<!-- HERO SECTION -->
 <section class="hero">
-    <h1>"Code. Create. Conquer."</h1>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-img">
+    <h1>Melwin Sam Thomas</h1>
+    <p class="quote">"Build your future with code."</p>
 </section>
 
-<section>
-    <h2>About</h2>
-    <p>I am a passionate developer building modern applications.</p>
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        A dedicated first-year BCA student at Star InfoTech College, embarks on a journey of creativity and innovation through a compelling website portfolio project. 
+        Eager to showcase his burgeoning skills and passion for technology, Ravi's digital prowess takes center stage in this endeavor. 
+        Join him on this exciting exploration of his academic and creative pursuits, as he crafts a digital footprint that reflects both class and ambition.
+    </p>
 </section>
 
-<section>
+<!-- SKILLS -->
+<section class="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>MySQL</li>
-    </ul>
+    <div class="skill-box">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>MySQL</span>
+        <span>Flask</span>
+    </div>
 </section>
 
-<section>
-    <h2>Contact</h2>
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Me</h2>
     <form action="/contact" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
     </form>
 </section>
