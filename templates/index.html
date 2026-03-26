@@ -8,7 +8,10 @@
 
 <!-- HERO SECTION -->
 <section class="hero">
-    <img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-img">
+    <!-- PROFILE IMAGE -->
+    <div class="img-container">
+        <img src="{{ url_for('static', filename='photo.jpg') }}" alt="My Photo" class="profile-img">
+    </div>
     <h1>Melwin Sam Thomas</h1>
     <p class="quote">"Build your future with code."</p>
 </section>
